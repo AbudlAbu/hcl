@@ -33,6 +33,7 @@ public class RestaurentController {
 
 	@GetMapping("/getRestaurents")
 	public ResponseEntity<List<RestaurentModel>> getRestaurents() {
+System.out.println("inside");
 		return new ResponseEntity<List<RestaurentModel>>(service.displayRestaurents(), HttpStatus.OK);
 	}
 	
